@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>my page</title>
+    <style>
+        .btn { background-color: red; color: white; padding: 10px; border: none; }
+    </style>
+</head>
+<body>
+    <h1>Welcome User</h1>
+
+    <div id="mainContent">
+        <p>Click below to do something</p>
+        <button class="btn" onclick="doSomething()">Click</button>
+        <br><br>
+        <button class="btn" onclick="doSomething()">Click</button>
+        <br><br>
+        <button class="btn" onclick="doSomething()">Click</button>
+    </div>
+
+    <script>
+        function doSomething() {
+            var x = document.getElementById("mainContent");
+            x.innerHTML = "<p>You clicked!</p>";
+        }
+    </script>
+</body>
+</html>
